@@ -15,3 +15,8 @@ The global patterns are semantic-aware, and our performances exceed baselines:
 
 ### [Full demo (Youtube)](https://youtu.be//auPun0dd7sM)
 <p align="center"> <a href="https://youtu.be/auPun0dd7sM"><img src="figs/thumbnail.png" width="600"></a> </p>
+
+
+## 📋 TODO
+- [ ] Release pretrained checkpoints. 
+- [ ] Release training codes and data. 
