@@ -22,7 +22,7 @@ The global patterns are semantic-aware, and our performances exceed baselines:
 ## 1. Environment
 
 ```shell script
-### CUDA 11.8  GCC 9.4
+### CUDA 11.8
 conda env create -f env.yml
 source activate LogoSP
 
