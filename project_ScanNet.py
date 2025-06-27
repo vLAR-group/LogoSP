@@ -125,9 +125,10 @@ if __name__ == "__main__":
     feat_dim = 384
     feat_save_path = './data/ScanNet/DINOv2_feats_s14up4_voxel_' + str(voxel_size)
 
-    scene_list = sorted(os.listdir("./data/ScanNet/scannet_2d/"))
+    scene_list = sorted([scene for scene in os.listdir("./data/ScanNet/scannet_2d/") if os.path.isdir(os.path.join("./data/ScanNet/scannet_2d/", scene))])
     # model = torch.hub.load('facebookresearch/dino:main', 'dino_vits16').cuda().eval()
-    model = torch.hub.load('facebookresearch/dinov2:main', 'dinov2_vits14').cuda().eval()
+    # model = torch.hub.load('facebookresearch/dinov2:main', 'dinov2_vits14').cuda().eval()
+    model = torch.hub.load('./facebookresearch_dinov2_main', 'dinov2_vits14', source='local').cuda().eval()
 
     model.fc = torch.nn.Identity()
     #

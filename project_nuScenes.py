@@ -160,8 +160,9 @@ def main(args):
     process_id_range = args.process_id_range
 
     ## add dinov2 model
-    model = torch.hub.load('facebookresearch/dinov2', 'dinov2_vits14').cuda().eval()
-    args.model =model
+    # model = torch.hub.load('facebookresearch/dinov2', 'dinov2_vits14').cuda().eval()
+    model = torch.hub.load('./facebookresearch_dinov2_main', 'dinov2_vits14', source='local').cuda().eval()
+    args.model = model
 
     # calculate image pixel-3D points correspondances
     args.point2img_mapper = PointCloudToImageMapper(image_dim=img_dim, cut_bound=args.cut_num_pixel_boundary)

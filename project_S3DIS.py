@@ -81,7 +81,8 @@ if __name__ == "__main__":
 
     # model = torch.hub.load('facebookresearch/dino:main', 'dino_vits8').cuda().eval()
     # response = requests.get('https://dl.fbaipublicfiles.com', verify=False)
-    model = torch.hub.load('facebookresearch/dinov2:main', 'dinov2_vits14').cuda().eval()
+    # model = torch.hub.load('facebookresearch/dinov2:main', 'dinov2_vits14').cuda().eval()
+    model = torch.hub.load('./facebookresearch_dinov2_main', 'dinov2_vits14', source='local').cuda().eval()
     model.fc = torch.nn.Identity()
     #
     def get_feature_hook(module, input, output):
