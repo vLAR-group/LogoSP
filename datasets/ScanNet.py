@@ -277,9 +277,9 @@ class Scannettrain(Dataset):
         coords = self.rota_coords(coords)
         coords = self.trans_coords(coords)
         coords = self.scale_coords(coords)
-        # scale = 1 / self.args.voxel_size
-        # coords = self.elastic_coords(coords, 6 * scale // 50, 40 * scale / 50)
-        # coords = self.elastic_coords(coords, 20 * scale // 50, 160 * scale / 50)
+        scale = 1 / self.args.voxel_size
+        coords = self.elastic_coords(coords, 6 * scale // 50, 40 * scale / 50)
+        coords = self.elastic_coords(coords, 20 * scale // 50, 160 * scale / 50)
         return coords, feats
 
     def augment_coords_to_feats(self, coords, colors):
@@ -314,8 +314,8 @@ class Scannettrain(Dataset):
         region_file = self.args.sp_path + '/' +self.name[index] + '_superpoint.npy'
         region = np.load(region_file)[unique_map]
 
-        # if self.mode == 'train':
-        #     coords, colors = self.augs(coords, colors)
+        if self.mode == 'train':
+            coords, colors = self.augs(coords, colors)
 
         coords, feats = self.augment_coords_to_feats(coords, colors / 255 - 0.5)
         labels[labels == self.args.ignore_label] = -1
