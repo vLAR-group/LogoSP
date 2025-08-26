@@ -1,6 +1,7 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2504.11754-b31b1b.svg)](https://arxiv.org/abs/2506.07857)
 ![code visitors](https://visitor-badge.glitch.me/badge?page_id=vLAR-group/OGC)
 [![Twitter Follow](https://img.shields.io/twitter/follow/vLAR_Group?style=social)](https://twitter.com/vLAR_Group)
+[![License: CC-BY-NC-SA](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-green)](./LICENSE)
 
 ## LogoSP: Local-global Grouping of Superpoints for Unsupervised Semantic Segmentation of 3D Point Clouds (CVPR 2025)
 [Zihui Zhang](https://scholar.google.com.hk/citations?hl=en&user=jiwazT8AAAAJ&view_op=list_works&sortby=pubdate), Weisheng Dai, [Hongtao Wen](https://hatimwen.github.io/), [Bo Yang](https://yang7879.github.io/)
