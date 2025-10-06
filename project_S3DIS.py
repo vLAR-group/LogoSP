@@ -249,13 +249,13 @@ if __name__ == "__main__":
             with open(os.path.join(feat_save_path+'_0.05', Area+scene+'.pickle'), 'wb') as f:
                 pickle.dump([voxel_features, voxel_indicator], f)
 
-            # pca = PCA(n_components=3)
-            # pca_features = pca.fit_transform(voxel_features)
-            # min_vals = pca_features.min(axis=0)
-            # max_vals = pca_features.max(axis=0)
-            # voxel_color = 255 * (pca_features - min_vals) / (max_vals - min_vals)
+            pca = PCA(n_components=3)
+            pca_features = pca.fit_transform(voxel_features)
+            min_vals = pca_features.min(axis=0)
+            max_vals = pca_features.max(axis=0)
+            voxel_color = 255 * (pca_features - min_vals) / (max_vals - min_vals)
             # ##
-            # write_ply(os.path.join(feat_save_path+'_0.05', Area+scene+'.ply'), [voxel_coords, voxel_color.astype(np.uint8)], ['x', 'y', 'z', 'red', 'green', 'blue'])
+            write_ply(os.path.join(feat_save_path+'_0.05', Area+scene+'.ply'), [voxel_coords, voxel_color.astype(np.uint8)], ['x', 'y', 'z', 'red', 'green', 'blue'])
 
             print(f"project  processing time: {time.time() - project_time:.2f} seconds")
     print("done!")
