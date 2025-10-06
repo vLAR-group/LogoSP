@@ -99,10 +99,9 @@ ScanNet
 
 ### S3DIS
 S3DIS dataset can be found [here](https://docs.google.com/forms/d/e/1FAIpQLScDimvNMCGhy_rmBA2gHfDu3naktRm6A8BPwAWWDv-Uhm6Shw/viewform?c=0&w=1). 
-Download the files named "Stanford3dDataset_v1.2_Aligned_Version.zip". Uncompress the folder and move it to `data/S3DIS/raw`. There is an error in `line 180389` of file `Area_5/hallway_6/Annotations/ceiling_1.txt` 
-which needs to be fixed manually and modify the `copy_Room_1.txt` in `Area_6/copyRoom_1` to `copyRoom_1.txt`. Then run the below commands to begin preprocessing:
+Notice that download the files named "Stanford3dDataset_v1.2.zip". Uncompress the folder and move it to `data/S3DIS/raw`. Then run the commands below to begin preprocessing:
 ```shell script
-python data_prepare/data_prepare_S3DIS.py --data_path './data/ScanNet/raw' --processed_data_path './data/ScanNet/processed' --processed_sp_path './data/ScanNet/Felzenszwalb'
+python data_prepare/data_prepare_S3DIS.py --data_path './data/S3DIS/raw'
 ```
 
 The 2D image and camera parameters are storted in [2D-3D-S dataset](https://github.com/alexsax/2D-3D-Semantics), please 
