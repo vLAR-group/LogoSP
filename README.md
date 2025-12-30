@@ -102,6 +102,7 @@ S3DIS dataset can be found [here](https://docs.google.com/forms/d/e/1FAIpQLScDim
 Notice that download the files named "Stanford3dDataset_v1.2.zip". Uncompress the folder and move it to `data/S3DIS/raw`. Then run the commands below to begin preprocessing:
 ```shell script
 python data_prepare/data_prepare_S3DIS.py --data_path './data/S3DIS/raw'
+python data_prepare/initialSP_prepare_S3DIS.py
 ```
 
 The 2D image and camera parameters are storted in [2D-3D-S dataset](https://github.com/alexsax/2D-3D-Semantics), please 
