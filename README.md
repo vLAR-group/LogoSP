@@ -1,5 +1,5 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2504.11754-b31b1b.svg)](https://arxiv.org/abs/2506.07857)
-![code visitors](https://visitor-badge.glitch.me/badge?page_id=vLAR-group/OGC)
+![code visitors](https://visitor-badge.glitch.me/badge?page_id=vLAR-group/LogoSP)
 [![Twitter Follow](https://img.shields.io/twitter/follow/vLAR_Group?style=social)](https://twitter.com/vLAR_Group)
 [![License: CC-BY-NC-SA](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-green)](./LICENSE)
 
