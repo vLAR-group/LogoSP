@@ -4,7 +4,7 @@
 [![License: CC-BY-NC-SA](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-green)](./LICENSE)
 
 ## LogoSP: Local-global Grouping of Superpoints for Unsupervised Semantic Segmentation of 3D Point Clouds (CVPR 2025)
-[Zihui Zhang](https://scholar.google.com.hk/citations?hl=en&user=jiwazT8AAAAJ&view_op=list_works&sortby=pubdate), Weisheng Dai, [Hongtao Wen](https://hatimwen.github.io/), [Bo Yang](https://yang7879.github.io/)
+[Zihui Zhang](https://zihui0930.github.io/), Weisheng Dai, [Hongtao Wen](https://hatimwen.github.io/), [Bo Yang](https://yang7879.github.io/)
 
 ### Overview
 
@@ -12,7 +12,7 @@ We propose an unsupervised learning approach for 3D semantic segmentation.
 
 <p align="center"> <img src="figs/framework_LogoSP.png" alt="drawing" width="1000"/> </p>
 
-The global patterns are semantic-aware, and our performances exceed baselines:
+The global patterns are semantic-aware, and our performance exceeds baselines:
 | ![z](figs/pattern.gif)   |   ![z](figs/seg.gif) |
 | ----------------------   |   ------------------ |
 
